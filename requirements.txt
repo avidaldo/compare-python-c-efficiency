@@ -1,0 +1,13 @@
+# Python 3.13 or newer. With uv, `uv sync` reads pyproject.toml instead.
+# With pip or conda, inside an environment: pip install -r requirements.txt
+-e .
+numpy>=2.3
+matplotlib
+numba>=0.62
+cython>=3.1
+threadpoolctl
+torch>=2.9
+ipykernel
+nbconvert>=7.17
+# Only for 05_gpus_and_cuda and deep-dives/gpu_performance, on an NVIDIA GPU:
+# cupy-cuda13x[ctk]>=14
